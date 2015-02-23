@@ -13,9 +13,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.content.Intent;
 
 public class ReadComments extends ListActivity {
 
@@ -76,6 +78,8 @@ public class ReadComments extends ListActivity {
 		Intent i = new Intent(ReadComments.this, AddComment.class);
 		startActivity(i);
 	}
+
+
 
 	/**
 	 * Retrieves recent post data from the server.
